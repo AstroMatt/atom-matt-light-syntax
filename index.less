@@ -1,0 +1,157 @@
+.tree-view {
+    background: #fff !important;
+}
+
+atom-text-editor,
+.pane {
+    background: #fff !important;
+    color: #333 !important;
+    padding: 1em;
+}
+
+.tree-view .list-item {
+    padding: 0;
+    line-height: inherit;
+}
+
+.tree-view .selected::before {
+    background: transparent !important;
+}
+
+.tree-view .icon::before {
+    font-size: 13px;
+}
+
+.selection .region {
+    background: #aaa;
+}
+
+.cursor {
+    color: #f00;
+}
+
+
+
+.var,
+.class,
+.function,
+.keyword,
+.control {
+    color: #00f;
+}
+
+.variable,
+.constant,
+.support,
+.punctuation,
+.brace,
+.bracket  {
+    color: #333;
+}
+
+.arguments, .arguments *,
+.parameter, .parameter *,
+.inherited-class,
+.string,
+.comment {
+    color: #aaa;
+}
+
+
+
+
+.html {
+    color: #aaa;
+}
+
+.html.text {
+    color: #333;
+}
+
+
+
+
+
+
+.gfm .heading {
+    color: #00f;
+}
+
+.gfm .yaml,
+.gfm .bold,
+.gfm .italic {
+    color: #aaa;
+}
+
+.gfm .table {
+    font-size: 0.75em;
+}
+
+
+
+
+
+
+
+.markdown-preview.markdown-preview {
+  background: #fff;
+  font-family: "Helvetica", "Times New Roman";
+  line-height: 1.5;
+  font-size: 1em;
+  //text-align: justify;
+}
+
+.markdown-preview.markdown-preview h1 {
+    font-size: 2em;
+    border-bottom: none;
+    margin-bottom: 2em;
+    page-break-after: avoid;
+    page-break-before: always;
+}
+
+.markdown-preview.markdown-preview h1:first-of-type {
+    page-break-before: avoid;
+}
+
+.markdown-preview.markdown-preview h2 {
+    font-size: 1.5em;
+    border-bottom: none;
+    margin-top: 2em;
+    margin-bottom: 0;
+    page-break-after: avoid;
+}
+
+.markdown-preview.markdown-preview h3 {
+    font-size: 1.2em;
+    border-bottom: none;
+    margin-top: 2em;
+    margin-bottom: 0;
+    page-break-after: avoid;
+}
+
+.markdown-preview.markdown-preview table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.markdown-preview.markdown-preview tr th {
+    text-align: left;
+    background: #f5f5f5;
+}
+
+.markdown-preview.markdown-preview td {
+    background: #fff;
+}
+
+.markdown-preview.markdown-preview li {
+    list-style-type: disc;
+    page-break-inside: avoid;
+}
+
+.markdown-preview.markdown-preview ul {
+    page-break-inside: avoid;
+}
+
+.markdown-preview.markdown-preview table[data-table-type="yaml-metadata"] {
+    display: none;
+}
