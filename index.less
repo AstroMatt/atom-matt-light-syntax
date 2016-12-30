@@ -1,11 +1,18 @@
+@background: #eee;
+@keyword: #00f;
+@text: #333;
+@string: #bbb;
+
+
+
 .tree-view {
-    background: #fff !important;
+    background: @background !important;
 }
 
 atom-text-editor,
 .pane {
-    background: #fff !important;
-    color: #333 !important;
+    background: @background !important;
+    color: @text !important;
     padding: 1em;
 }
 
@@ -19,12 +26,13 @@ atom-text-editor,
 }
 
 .selection .region {
-    background: #eee;
+    background: lighten(@string, 20%) !important;
 }
 
 .cursor {
-    color: #f00;
+    color: red;
 }
+
 
 
 .var,
@@ -32,7 +40,7 @@ atom-text-editor,
 .function,
 .keyword,
 .control {
-    color: #00f;
+    color: @keyword;
 }
 
 .entity,
@@ -44,7 +52,7 @@ atom-text-editor,
 .punctuation,
 .brace,
 .bracket  {
-    color: #333;
+    color: @text;
 }
 
 .arguments, .arguments *,
@@ -52,33 +60,29 @@ atom-text-editor,
 .inherited-class,
 .string,
 .comment {
-    color: #aaa;
+    color: @string;
 }
-
 
 
 
 .html {
-    color: #aaa;
+    color: @string;
 }
 
 .html.text {
-    color: #333;
+    color: @text;
 }
-
-
-
 
 
 
 .gfm .heading {
-    color: #00f;
+    color: @keyword;
 }
 
 .gfm .yaml,
 .gfm .bold,
 .gfm .italic {
-    color: #aaa;
+    color: @string;
 }
 
 .gfm .table {
