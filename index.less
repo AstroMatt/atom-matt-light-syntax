@@ -34,58 +34,59 @@ atom-text-editor,
 }
 
 
-
-.var,
-.class,
-.function,
-.keyword,
-.control {
+.syntax--var,
+.syntax--class,
+.syntax--function,
+.syntax--keyword,
+.syntax--control {
     color: @keyword;
 }
 
-.entity,
-.delimiter,
-.variable,
-.constant,
-.support,
-.punctuation,
-.brace,
-.bracket  {
+.syntax--entity,
+.syntax--delimiter,
+.syntax--variable,
+.syntax--constant,
+.syntax--support,
+.syntax--punctuation,
+.syntax--brace,
+.syntax--bracket {
     color: @text;
 }
 
-.operator,
-.arguments, .arguments *,
-.parameter, .parameter *,
-.inherited-class,
-.string,
-.comment {
-    color: @string;
+.syntax--operator,
+.syntax--arguments,
+.syntax--arguments *,
+.syntax--parameter,
+.syntax--parameter *,
+.syntax--inherited-class,
+.syntax--string,
+.syntax--comment {
+   color: @string;
 }
 
 
 
-.html {
+.syntax--html {
     color: @string;
 }
 
-.html.text {
+.syntax--html.syntax--text {
     color: @text;
 }
 
 
 
-.gfm .heading {
+.syntax--gfm .syntax--heading {
     color: @keyword;
 }
 
-.gfm .yaml,
-.gfm .bold,
-.gfm .italic {
+.syntax--gfm .syntax--yaml,
+.syntax--gfm .syntax--bold,
+.syntax--gfm .syntax--italic {
     color: @string;
 }
 
-.gfm .table {
+.syntax--gfm .syntax--table {
     font-size: 0.75em;
 }
 
