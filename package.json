@@ -1,7 +1,7 @@
 {
   "name": "atom-matt-light-syntax",
   "theme": "syntax",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Atom Matt Light Syntax",
   "license": "MIT",
   "repository": "https://github.com/astromatt/atom-matt-light-syntax.git",
