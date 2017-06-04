@@ -5,6 +5,19 @@
 
 
 
+atom-text-editor {
+  font-family: "Times New Roman";
+  font-size: 12pt;
+}
+
+.selection .region {
+    background: darken(@string, 20%) !important;
+}
+
+
+
+
+
 
 
 .wrap-guide {
@@ -39,10 +52,6 @@ atom-workspace,
     font-size: 13px;
 }
 
-.selection .region {
-    background: darken(@string, 20%) !important;
-}
-
 .cursor {
     color: red;
 }
@@ -74,6 +83,7 @@ atom-workspace,
 .syntax--parameter *,
 .syntax--inherited-class,
 .syntax--string,
+.syntax--todo,
 .syntax--comment {
    color: @string;
 }
@@ -84,14 +94,21 @@ atom-workspace,
     color: @string;
 }
 
-.syntax--html.syntax--text {
+.syntax--text {
     color: @text;
 }
 
+.syntax--gfm .syntax--italic {
+    font-style: italic;
+}
 
+.syntax--gfm .syntax--bold {
+    font-weight: bold;
+}
 
 .syntax--gfm .syntax--heading {
-    color: @keyword;
+    color: @keyword !important;
+    font-weight: bold;
 }
 
 .syntax--gfm .syntax--yaml,
